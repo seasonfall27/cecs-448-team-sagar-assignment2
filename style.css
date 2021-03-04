@@ -148,3 +148,90 @@ section {
 .experience .experience-content .h3 {
     font-size: 12px;
 }
+
+/* contact section */
+section {
+    padding: 100px 0;
+}
+
+.contact {
+    display: flex;
+    background-color: ;
+    background-size: contain;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Courier', sans-serif;
+}
+
+.contact .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.contact .contact-content .h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.contact .contact-content .h2 {
+    font-size: 24px;
+}
+
+.contact .contact-content .h3 {
+    font-size: 20px;
+}
+
+table{
+    max-width: 800px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:0px;
+    border-radius: 20px;
+
+}
+
+table td{
+    padding: 3px 3px 3px 3px;
+    border-radius: 10px;
+}
+
+input {
+    width: 95%;
+    padding: 5px;
+    border: 3px inset #F5D364;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Courier';
+    font-weight: bold;
+}
+
+input[type=submit] {
+    padding: 10px;
+    width: 25%;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #383838;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: #F5D364
+}
+
+textarea {
+    width: 95%;
+    padding: 5px;
+    background-color: #fff;
+    border: 3px inset #F5D364;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Courier';
+    font-weight: bold;
+}
+
+#fn1{
+    width : 20%;
+}
