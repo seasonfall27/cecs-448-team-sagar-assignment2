@@ -28,6 +28,7 @@ body {
     padding: 5px 0;
     background-color: #F5D364;
     font-family: 'Courier', sans-serif;
+    z-index:1;
 }
 
 .nav .max-width {
