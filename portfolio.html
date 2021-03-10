@@ -4,15 +4,12 @@
         <title>Portfolio: Team Sagar</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Source+Code+Pro:wght@300;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-    <!-- Header
-        <div class="header">
-            <h1>Team Sagar</h1>
-            <p>This is a description.</p>
-        </div> -->
         
     <!-- Navigation -->
         <div class="nav">
@@ -29,6 +26,16 @@
         </div>
         
     <!-- Content -->
+        
+        <!-- Home -->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="h1">Team Sagar</div>
+                    <div class="h2">✦ Video Game Portfolio</div>
+                </div>
+            </div>
+        </section>
         
         <!-- About -->
         <section class="about" id="about">
@@ -159,7 +166,7 @@
         <section class="contact" id="contact">
             <div class="max-width">
                 <div class="contact-content">
-                    <div class="h1">Contact Us!</div>
+                    <div class="h1">Contact Us</div>
                     <div class="h2">Please fill out the form below, and we will get back to you ASAP!</div>
                     <div class="h3">
                         <form onsubmit="submitFunction();return false;">
@@ -180,12 +187,10 @@
                                   <td align="left">Email</td>
                                   <td><input type="email" name="email" id="email" value="" required></td>
                                 </tr>
-
                                 <tr>
                                   <td align="left">Company</td>
                                   <td><input type="text" name="company" id="company" value="" required></td>
                                 </tr>
-
                                 <tr>
                                   <td align="left">Message</td>
                                   <td><textarea name="comments" id="comments" cols="22" rows="10" placeholder="What's on your mind?"></textarea></td>
@@ -194,7 +199,6 @@
                                     <td align= "center" colspan="2">
                                         <input type="submit" name="submit" id="submit" value="Send"></td>
                                 </tr>
-
                             </table>
                         </form>
                     </div>
@@ -209,5 +213,6 @@ $(".option").click(function(){
    
 });
 </script>
+        
     </body>
 </html>
