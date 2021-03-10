@@ -236,7 +236,7 @@ body2 {
 	 min-width: 600px;
 	 /*max-width: 1000px;*/
 	 width: calc(100% - 100px);
-	 height: 1050px;
+	 height: calc(100vh - 150px);
 }
  @media screen and (max-width: 718px) {
 	 body2 .options {
