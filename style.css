@@ -66,7 +66,7 @@ body {
     background-color: #403F3D;
     //background: url("sunflower.jpg") no-repeat center;
     background-size: contain;
-    height: 100vh;
+    height: auto;
     color: white;
     min-height: 500px;
     font-family: 'Courier', sans-serif;
@@ -128,7 +128,7 @@ section {
     display: flex;
     background-color: dimgray;
     background-size: contain;
-    height: 100vh;
+    height: auto;
     color: white;
     min-height: 500px;
     font-family: 'Courier', sans-serif;
@@ -477,6 +477,6 @@ figure img {
     vertical-align: top;
 }
 figure figcaption {
-    border: 1px dotted yellow;
+    border: 1px dotted blue;
     text-align: center;
 }
