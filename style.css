@@ -531,6 +531,6 @@ figure img {
     vertical-align: top;
 }
 figure figcaption {
-    border: 1px dotted blue;
+    border: 1px dotted #5375a5;
     text-align: center;
 }
