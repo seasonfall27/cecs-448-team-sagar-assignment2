@@ -7,6 +7,25 @@
     font-family: 'Source Code Pro';
 }
 
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    background:#5375a5;
+    background-clip:padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7cd82f;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -411,7 +430,8 @@ section {
 .contact {
     display: flex;
     background-color: #000;
-    background-size: contain;
+    background: url("background.png") no-repeat center;
+    background-size: cover;
     height: 100vh;
     color: white;
     font-family: 'Source Pro Code';
