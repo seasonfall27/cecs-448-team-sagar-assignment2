@@ -117,7 +117,7 @@ body {
     display: flex;
     background-color: #000;
     background-size: contain;
-    height: calc(100vh - 150px);
+    height: auto;
     color: white;
     font-family: 'Source Pro Code';
 }
@@ -178,7 +178,7 @@ section {
     display: flex;
     background-color: #000;
     background-size: contain;
-    height: calc(100vh - 150px);
+    height: auto;
     color: white;
     font-family: 'Source Pro Code';
 }
