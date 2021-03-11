@@ -3,11 +3,15 @@
     <head> 
         <title>Portfolio: Team Sagar</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <! -- Added JQuery for easier Javascript functionality -->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Source+Code+Pro:wght@300;600&display=swap" rel="stylesheet">
+        <! -- Added Material icons and Font Awesome for icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <! -- Added SweetAlert JS for popup message -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         
@@ -212,6 +216,17 @@ $(".option").click(function(){
    $(this).addClass("active");
    
 });
+    function submitFunction() {  
+        setTimeout(function() {
+            //alert("Your submission to the form has been confirmed!");
+            swal({
+              title: "Submission Success!",
+              text: "Your message has been sent.",
+              icon: "success",
+              button: "Great!",
+            });
+        }, 500);
+    }
 </script>
         
     </body>
