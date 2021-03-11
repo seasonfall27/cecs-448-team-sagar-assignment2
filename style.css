@@ -526,6 +526,10 @@ figure {
     display: inline-block;
     border: 1px dotted gray;
     margin: 20px; /* adjust as needed */
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 figure img {
     vertical-align: top;
