@@ -143,10 +143,6 @@ section {
     font-size: 48px;
 }
 
-.interests .interests-content .h3 {
-    font-size: 12px;
-}
-
 .interests .interests-content ul {
     list-style-position: inside;
     /*display: inline-block;*/
