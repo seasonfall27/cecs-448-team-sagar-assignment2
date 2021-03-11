@@ -7,6 +7,25 @@
     font-family: 'Source Code Pro';
 }
 
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    background:#5375a5;
+    background-clip:padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7cd82f;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -98,7 +117,7 @@ body {
     display: flex;
     background-color: #000;
     background-size: contain;
-    height: 100vh;
+    height: auto;
     color: white;
     font-family: 'Source Pro Code';
 }
@@ -165,7 +184,7 @@ section {
     display: flex;
     background-color: #000;
     background-size: contain;
-    height: 100vh;
+    height: auto;
     color: white;
     font-family: 'Source Pro Code';
 }
@@ -417,7 +436,8 @@ section {
 .contact {
     display: flex;
     background-color: #000;
-    background-size: contain;
+    background: url("background.png") no-repeat center;
+    background-size: cover;
     height: 100vh;
     color: white;
     font-family: 'Source Pro Code';
@@ -495,4 +515,35 @@ textarea {
 #fn1{
     width : 20%;
 }
- 
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.img-col{
+    flex-basis:100%
+}
+
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px; /* adjust as needed */
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+figure img {
+    vertical-align: top;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+figure figcaption {
+    border: 1px dotted #5375a5;
+    text-align: center;
+}
