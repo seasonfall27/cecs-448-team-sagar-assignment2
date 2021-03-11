@@ -147,8 +147,16 @@ section {
     font-size: 12px;
 }
 
-ul {
+.interests .interests-content ul {
     list-style-position: inside;
+    /*display: inline-block;*/
+    list-style-type: none;
+}
+
+.interests .interests-content ul li::before {
+    content: '\1F3AE';
+    margin-left: -10px;
+    margin-right: 10px;
 }
 
 /* experience section */
