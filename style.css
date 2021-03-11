@@ -147,6 +147,10 @@ section {
     font-size: 12px;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 /* experience section */
 section {
     padding: 100px 0;
