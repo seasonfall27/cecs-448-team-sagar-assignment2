@@ -3,23 +3,27 @@
     <head> 
         <title>Portfolio: Team Sagar</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <! -- Added JQuery for easier Javascript functionality -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Source+Code+Pro:wght@300;600&display=swap" rel="stylesheet">
+        <! -- Added Material icons and Font Awesome for icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <! -- Added SweetAlert JS for popup message -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
-    <!-- Header
-        <div class="header">
-            <h1>Team Sagar</h1>
-            <p>This is a description.</p>
-        </div> -->
         
     <!-- Navigation -->
         <div class="nav">
             <div class="max-width">
-                <div class="title"><a href="#"><b>Team Sagar.</b></a></div>
+                <div class="title"><a href="#">Team Sagar.</a></div>
                 <ul class="menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#interests">Interests</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -27,11 +31,21 @@
         
     <!-- Content -->
         
+        <!-- Home -->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="h1">Team Sagar</div>
+                    <div class="h2">✦ Video Game Portfolio</div>
+                </div>
+            </div>
+        </section>
+        
         <!-- About -->
         <section class="about" id="about">
             <div class="max-width">
                 <div class="about-content">
-                    <div class="h1">Team Sagar.</div>
+                    <div class="h1">About Team Sagar.</div>
                     <div class="h2">Welcome to our portfolio!</div>
                     <div class="h3">This should be the about section.</div>
                 </div>
@@ -62,52 +76,160 @@
             </div>
         </section>
         
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <div class="projects-content">
+                    <div id="parent">
+                      <div id="narrow">
+                        <br>
+                        <div class="h1">Projects.</div><br>
+                        <div class="h2">Video Games!</div>
+                        <br>
+                        <div class="h3">These are our team member's video games that were made for previous classes or as personal projects.<br></div><br>
+                        <div class="h2" style="font-size: 1.4rem;">Skills and Technologies:</div><br>
+                        <div class="h3"><ul>
+                            <li><b>Spooked!:</b><br><br> Unity Engine in C#, Google Firebase, A* Pathfinding, Halloween Asset Pack<br><br></li>
+                            <li><b>Cloudwave VR:</b><br><br> Oculus Quest for Android phones<br><br></li>
+                            <li><b>Software Engineering Test Game:</b><br><br> RenPy: Visual Novel Engine in Python</li><br>
+                            <li><b>Flap:</b><br><br> Unity Engine in C#, Oculus Rift, Myo Armbands, Blender</li><br>
+                            <li><b>Board Games:</b><br><br>Microsoft .NET Framework in C#, WPF in XAML, and Model View Controller (MVC) and Model View Viewmodel (MVVM) architecture design.</li><br>
+                        </ul><br></div>
+                        <br>
+                      </div>
+                      <div id="wide">
+                        <body2>
+                        <div class="options">
+                           <div class="option active" style="--optionBackground:url(https://lh3.googleusercontent.com/pCiKf59rz_SdlYP35tyiK-qXzEPke5SWkJFbh7mlXZtgc8zXAfN3qgGNgRjxmhFUeZF90Gy6IMUOZ9658YT9j6vPZUVArcTk6fbbVqQ30plRCTbJhlCPCEaHSyFQWQDpYFWvrnZeYg=w2400);">
+                              <div class="shadow"></div>
+                              <div class="label">
+                                 <div class="icon">
+                                    <i class="material-icons">videogame_asset</i>
+                                 </div>
+                                 <div class="info">
+                                    <div class="main">Spooked!         <a href="https://docs.google.com/presentation/d/1kazZ3ZHFS5PnEIwaGpQN54QBmgZaoRt9Qm_ct7WXwXY/edit?usp=sharing" style="font-size:18px;color:white"><i class="material-icons">slideshow</i> Presentation Link</a></div>
+                                    <div class="sub">Made by Julia for CECS491: Spooked! is a 2D Side-scrolling single player shooter video game.</div>
+                                 </div>
+                              </div>
+                           </div>
+                            <div class="option" style="--optionBackground:url(https://lh3.googleusercontent.com/XHJWoIiaLLDJuf2VoMXLaCmX3WKNnUKmUVZtkCg2EkTnE85FlH4hZM85oEWBbYZzAeDUaxShFa_KKZjM9euIs7QOipYkSfIotwtv1eZUJTD8aIalSUbLcc_ne_c-CK_Qp7eQKxymiw=w2400);">
+                              <div class="shadow"></div>
+                              <div class="label">
+                                 <div class="icon">
+                                    <i class="material-icons">audiotrack</i>
+                                 </div>
+                                 <div class="info">
+                                    <div class="main">Cloudwave VR         <a href="https://apaulture.itch.io/cloudwave" style="font-size:18px;color:white"><i class="material-icons">get_app</i> Download Link</a></div>
+                                    <div class="sub">Made by Steven for VGDA: Cloudwave is an experience-centered lighthearted VR rhythm game build for Oculus Quest.</div>
+                                 </div>
+                              </div>
+                           </div>
+                            <div class="option" style="--optionBackground:url(https://lh3.googleusercontent.com/ri6BQ2VuMCtuNI9kdNTBgZRClaJWh63W3Lq6T7LEhOpS-IQ-P958mr2px79dxeEf0AtoSpoyVyQG0sadSXsGVAduZ3ZfnV6BrTRm8SumbuWwB_8ZTFc89egsR4Sbo0MWEgvuK_C0zQ=w2400);">
+                              <div class="shadow"></div>
+                              <div class="label">
+                                 <div class="icon">
+                                    <i class="material-icons">code</i>
+                                 </div>
+                                 <div class="info">
+                                    <div class="main">Software Engineering Test Game         <a href="https://github.com/seasonfall27/cecs-445-swe-video-game" style="font-size:18px;color:white"><i class="fa fa-github"style="font-size:22px;"></i> Github Link</a></div>
+                                    <div class="sub">Made by Autumn & Kenny for CECS445: This is a Otome video game that tests your knowledge of Software Engineering and Agile practices.</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="option" style="--optionBackground:url(http://web.csulb.edu/~016405205/cecs110/final/GalleryPictures/photo7thumb.png);">
+                              <div class="shadow"></div>
+                              <div class="label">
+                                 <div class="icon">
+                                    <i class="material-icons">flutter_dash</i>
+                                 </div>
+                                 <div class="info">
+                                    <div class="main">Flap         <a href="https://github.com/WinnMoo/Flap" style="font-size:18px;color:white"><i class="fa fa-github"style="font-size:22px;"></i> Github Link</a></div>
+                                    <div class="sub">Made by Autumn for Beachhacks: Flap is a 3rd person VR Platforming Game in which the player is fully immersed in the 3D environment.</div>
+                                </div>
+                              </div>
+                           </div>
+                           <div class="option" style="--optionBackground:url(http://web.csulb.edu/~016405205/cecs110/final/GalleryPictures/photo15.png);">
+                              <div class="shadow"></div>
+                              <div class="label">
+                                 <div class="icon">
+                                    <i class="material-icons">dashboard</i>
+                                 </div>
+                                 <div class="info">
+                                    <div class="main">Board Games         <a href="https://github.com/seasonfall27/Board-Games-Web-Application" style="font-size:18px;color:white"><i class="fa fa-github"style="font-size:22px;"></i> Github Link</a></div>
+                                    <div class="sub">Made by Autumn for CECS475: Board Games plays Chess, Othello, and Tic Tac Toe vs. another human opponent or computer AI.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                    </body2>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+                        
         <!-- Contact -->
         <section class="contact" id="contact">
             <div class="max-width">
                 <div class="contact-content">
-                    <div class="h1">Contact Us!</div>
+                    <div class="h1">Contact Us</div>
                     <div class="h2">Please fill out the form below, and we will get back to you ASAP!</div>
                     <div class="h3">
-                        
-                                <form onsubmit="submitFunction();return false;">
-                                    <table class="form" align="center" width="100%" cellpadding="20" cellspacing="10">
-                                        <tr>
-                                            <td align="left" id="fn1">First Name</td>
-                                            <td><input type="text" name="fname" id="fname" value="" required></td>
-                                        </tr>
-                                        <tr>
-                                            <td align="left">Last Name</td>
-                                            <td><input type="text" name="lname" id="lname" value="" required></td>
-                                        </tr>
-                                        <tr>
-                                            <td align="left">Phone Number</td>
-                                            <td><input type="tel" name="phone" id="phone" value="" required></td>
-                                        </tr>
-                                        <tr>
-                                          <td align="left">Email</td>
-                                          <td><input type="email" name="email" id="email" value="" required></td>
-                                        </tr>
-
-                                        <tr>
-                                          <td align="left">Company</td>
-                                          <td><input type="text" name="company" id="company" value="" required></td>
-                                        </tr>
-
-                                        <tr>
-                                          <td align="left">Message</td>
-                                          <td><textarea name="comments" id="comments" cols="22" rows="10" placeholder="What's on your mind?"></textarea></td>
-                                        </tr>
-                                        <tr>
-                                            <td align= "center" colspan="2">
-                                                <input type="submit" name="submit" id="submit" value="Send"></td>
-                                        </tr>
-
-                                    </table>
-                                </form>
+                        <form onsubmit="submitFunction();return false;">
+                            <table class="form" align="center" width="100%" cellpadding="20" cellspacing="10">
+                                <tr>
+                                    <td align="left" id="fn1">First Name</td>
+                                    <td><input type="text" name="fname" id="fname" value="" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="left">Last Name</td>
+                                    <td><input type="text" name="lname" id="lname" value="" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="left">Phone Number</td>
+                                    <td><input type="tel" name="phone" id="phone" value="" required></td>
+                                </tr>
+                                <tr>
+                                  <td align="left">Email</td>
+                                  <td><input type="email" name="email" id="email" value="" required></td>
+                                </tr>
+                                <tr>
+                                  <td align="left">Company</td>
+                                  <td><input type="text" name="company" id="company" value="" required></td>
+                                </tr>
+                                <tr>
+                                  <td align="left">Message</td>
+                                  <td><textarea name="comments" id="comments" cols="22" rows="10" placeholder="What's on your mind?"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td align= "center" colspan="2">
+                                        <input type="submit" name="submit" id="submit" value="Send"></td>
+                                </tr>
+                            </table>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
+
+<script>
+$(".option").click(function(){
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+   
+});
+    function submitFunction() {  
+        setTimeout(function() {
+            //alert("Your submission to the form has been confirmed!");
+            swal({
+              title: "Submission Success!",
+              text: "Your message has been sent.",
+              icon: "success",
+              button: "Great!",
+            });
+        }, 500);
+    }
+</script>
+        
     </body>
 </html>
