@@ -454,4 +454,29 @@ textarea {
 #fn1{
     width : 20%;
 }
- 
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.img-col{
+    flex-basis:100%
+}
+
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px dotted yellow;
+    text-align: center;
+}
