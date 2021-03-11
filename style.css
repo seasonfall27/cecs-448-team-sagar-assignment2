@@ -151,7 +151,7 @@ section {
 
 /* the ::before pesudo element is used to customize bullet points w/ an emoji. */
 .interests .interests-content ul li::before {
-    /* the ASCII code or emoticon code to have bullets as emoticons. */
+    /* the ASCII code or emoticon code to have the video game controller emoji as bullet points. */
     content: '\1F3AE';
     margin-left: -10px;
     margin-right: 10px;
