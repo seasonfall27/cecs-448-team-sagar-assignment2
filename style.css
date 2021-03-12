@@ -162,12 +162,25 @@ section {
     font-size: 48px;
 }
 
-.interests .interests-content .h2 {
-    font-size: 24px;
+.interests .interests-content ul {
+    list-style-position: inside;
+    /*display: inline-block;*/
+    list-style-type: none;
 }
 
-.interests .interests-content .h3 {
-    font-size: 12px;
+/* the ::before pesudo element is used to customize bullet points w/ an emoji. */
+.interests .interests-content ul li::before {
+    /* the ASCII code or emoticon code to have the video game controller emoji as bullet points. */
+    content: '\1F3AE';
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.interests .interests-content img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+/*    max-height: 100%;*/
 }
 
 /* experience section */
