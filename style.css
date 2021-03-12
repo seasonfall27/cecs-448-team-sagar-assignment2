@@ -176,6 +176,13 @@ section {
     margin-right: 10px;
 }
 
+.interests .interests-content img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+/*    max-height: 100%;*/
+}
+
 /* experience section */
 section {
     padding: 100px 0;
